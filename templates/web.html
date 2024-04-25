@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+<style>
+    body {
+        background-color:#6d6875;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 70px;
+        background-color: #333;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        font-size: 15px; /* Adjust the font size as needed */
+        font-family: "Monospace", monospace; /* Use Monospace font */
+        margin: 5px;
+    }
+
+    .button img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        left: 5px;
+    }
+
+    .button-icon {
+        margin-right: 10px;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="profile-picture">
+        <img src="/static/pfp.png" alt="Profile Picture">
+    </div>
+    <a href="https://github.com/G4rv19" class="button">
+        <img src="/static/github.gif" alt="Button 1">
+        My Github ~
+    </a>
+    <a href="https://open.spotify.com/user/31t7eyl56zn3yu6xvrm5eovirowq?si=7359bff3b4f1426b" class="button">
+        <img src="/static/spotify.png" alt="Button 2">
+        My Spotify ~
+    </a>
+    <a href="https://buymeacoffee.com/g4rv" class="button">
+        <img src="/static/coffee.jpeg" alt="Buy me Coffee" class="button-icon">
+        <span style="margin-left: 10px;">Buy me Coffee ~</span>
+    </a>    
+    <a href="https://www.instagram.com/g4r.v/" class="button">
+        <img src="/static/insta.jpeg" alt="Button 4">
+        My Instagram ~
+    </a>
+</div>
+</body>
+</html>
