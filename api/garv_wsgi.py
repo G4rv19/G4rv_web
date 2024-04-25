@@ -8,5 +8,5 @@ if path not in sys.path:
     sys.path.append(path)
 
 # Import the Flask app object from main.py
-from main import app as application
+from api.main import app as application
 t
