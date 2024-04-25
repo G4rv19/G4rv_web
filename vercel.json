@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-      "api/main": {
+      "api/main.py": {
         "runtime": "@vercel/php@1.0.0"
       }
     },
