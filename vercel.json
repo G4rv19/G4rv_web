@@ -1,12 +1,12 @@
 {
     "functions": {
-      "api/*.php": {
-        "runtime": "now-php@1.0.0"
+      "api/*.py": {
+        "runtime": "vercel-python@3.9"
       }
     },
     "routes": [
       { "src": "/static/(.*)", "dest": "api/static/$1" },
-      { "src": "/(.*)", "dest": "/api/main.php" }
+      { "src": "/(.*)", "dest": "/api/main.py" }
     ]
   }
   
