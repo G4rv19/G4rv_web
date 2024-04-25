@@ -1,5 +1,15 @@
 {
-    "rewrites": [
-        { "source": "/(.*)", "destination": "main.py" }
+    "version": 2,
+    "functions": {
+      "main": {
+        "runtime": "python3.8"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/main.py"
+      }
     ]
-}
+  }
+  
