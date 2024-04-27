@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('web.html')
+    return render_template('web.html')  # Remove '/templates/' from the template path
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0')

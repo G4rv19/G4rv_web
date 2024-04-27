@@ -4,14 +4,15 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
-
 # Install any needed dependencies specified in requirements.txt
+COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Add Flask package to requirements.txt
 RUN echo "Flask==2.0.1" >> requirements.txt
+
+# Copy the current directory contents into the container at /app
+COPY . /app
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
