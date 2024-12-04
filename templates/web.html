@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile Page</title>
-<style>
-    body {
-        background-color:#6d6875;
-        color: white;
-        font-family: Arial, sans-serif;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-    .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 250px;
-        height: 70px;
-        background-color: #333;
-        margin-bottom: 10px;
-        text-decoration: none;
-        color: white;
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
-        font-size: 15px; /* Adjust the font size as needed */
-        font-family: "Monospace", monospace; /* Use Monospace font */
-        margin: 5px;
-    }
-
-    .button img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        position: absolute;
-        left: 5px;
-    }
-
-    .button-icon {
-        margin-right: 10px;
-    }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FAF7F0;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #D8D2C2;
+        }
+        h1 {
+            margin: 15px 0 5px;
+            font-size: 24px;
+            color: #B17457;
+        }
+        .subtitle {
+            font-size: 17px;
+            color: #B17457;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            gap: 15px;
+        }
+        .skills img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain; /* Ensures consistent scaling */
+            background-color: transparent; /* Ensures no background */
+        }
+        .email-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #B17457;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 60px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .email-button:hover {
+            background-color: #8e543c;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <div class="profile-picture">
-        <img src="/static/pfp.png" alt="Profile Picture">
+    <img src="https://wallpapersok.com/images/hd/sukuna-neutral-face-4k-i37npqz55tpztb9i.jpg" alt="Profile Picture" class="profile-image">
+    <h1>Garv</h1>
+    <p class="subtitle">Crafting Code, Shaping Futures</p>
+    <div class="skills">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust Logo">
     </div>
-    <a href="https://github.com/G4rv19" class="button">
-        <img src="/static/github.gif" alt="Button 1">
-        My Github ~
-    </a>
-    <a href="https://open.spotify.com/user/31t7eyl56zn3yu6xvrm5eovirowq?si=7359bff3b4f1426b" class="button">
-        <img src="/static/spotify.png" alt="Button 2">
-        My Spotify ~
-    </a>
-    <a href="https://buymeacoffee.com/g4rv" class="button">
-        <img src="/static/coffee.jpeg" alt="Buy me Coffee" class="button-icon">
-        <span style="margin-left: 10px;">Buy me Coffee ~</span>
-    </a>    
-    <a href="https://www.instagram.com/g4r.v19/?img_index=1" class="button">
-        <img src="/static/insta.jpeg" alt="Button 4">
-        My Instagram ~
-    </a>
-</div>
+     <a href="mailto:garvsidana29@gmail.com" class="email-button">Contact</a>
 </body>
 </html>
